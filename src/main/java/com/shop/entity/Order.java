@@ -15,7 +15,7 @@ import static javax.persistence.FetchType.*;
 @Getter
 @Setter
 @Table(name = "orders")
-public class Order {
+public class Order extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -33,9 +33,5 @@ public class Order {
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true, fetch = LAZY)
     private List<OrderItem> orderItems = new ArrayList<>();
-
-    private LocalDateTime regTime;
-
-    private LocalDateTime updateTime;
 
 }

@@ -11,7 +11,7 @@ import static javax.persistence.FetchType.*;
 @Entity
 @Getter
 @Setter
-public class OrderItem {
+public class OrderItem extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -30,7 +30,4 @@ public class OrderItem {
 
     private int count;
 
-    private LocalDateTime regTime;
-
-    private LocalDateTime updateTime;
 }
