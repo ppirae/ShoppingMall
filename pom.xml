@@ -92,6 +92,12 @@
 			<scope>test</scope>
 			<version>${spring-security.version}</version>
 		</dependency>
+
+		<!-- 로그인/로그아웃 버튼 변경 ? -->
+		<dependency>
+			<groupId>org.thymeleaf.extras</groupId>
+			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
