@@ -8,9 +8,9 @@ import lombok.Setter;
 @Setter
 public class ItemSearchDto {
 
-    private String searchDataType;
+    private String searchDateType;
 
-    private ItemSellStatus itemSellStatus;
+    private ItemSellStatus searchSellStatus;
 
     private String searchBy;
 
